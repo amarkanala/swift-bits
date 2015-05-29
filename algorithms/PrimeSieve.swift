@@ -1,7 +1,9 @@
 //
 //  PrimeSieve.swift
 //  Created by Amar Kanala on 5/28/15.
-//
+//  Based on http://introcs.cs.princeton.edu/java/14array/PrimeSieve.java.html
+//  Usage from terminal: swift PrimeSieve.swift 100
+
 
 import Foundation
 
@@ -31,6 +33,7 @@ class PrimeSieve {
     }
 }
 
+// terminal runner
 if Process.arguments.count > 1 {
     var inputNumber = Process.arguments[1].toInt()!
     var primenumbers = PrimeSieve(number: inputNumber)
